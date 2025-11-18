@@ -1,0 +1,122 @@
+{
+  "levels": [
+    {
+      "id": "map1",
+      "name": "Le debut du sentier",
+      "description": "un large tapis d’herbe jaune-doré s’étend sur toute la carte, parsemé de petits bosquets d’arbres aux feuillages vert profond, comme s’ils murmuraient entre eux. Au centre, un chemin de terre sinueux remonte du bas vers le haut, tracé par des siècles de passages oubliés ; sa couleur plus claire tranche avec la plaine et guide naturellement le regard. En bas à gauche, un petit amas de rochers arrondis semble former un ancien cercle de pierres, couvert de mousse, comme s’il avait servi autrefois à des rituels druidiques. En bas à droite, un minuscule lac circulaire d’un bleu-vert sombre dort au milieu de l’herbe, son eau parfaitement calme reflétant un léger halo irréel, comme si une magie ancienne y sommeillait.",
+      "background": "/assets/level1.png",
+      "requireAllMonstersDead": true,
+      "spawns": [{ "x":1,"y":1 }, { "x":2,"y":1 }, { "x":1,"y":2 }, { "x":2,"y":2 }, { "x":3,"y":1 }, { "x":3,"y":2 }],
+      "decor": [
+        { "x": 5, "y": 8, "type": "wall",  "blocking": true },
+        { "x":1, "y": 16, "type": "tree",  "blocking": true },
+        { "x": 18, "y":14, "type": "river", "blocking": true },
+        { "x": 17, "y":14, "type": "river", "blocking": true },
+        { "x": 16, "y":14, "type": "river", "blocking": true },
+        { "x": 15, "y":14, "type": "river", "blocking": true },
+        { "x": 17, "y":13, "type": "river", "blocking": true },
+        { "x": 16, "y":13, "type": "river", "blocking": true },
+        { "x": 15, "y":13, "type": "river", "blocking": true },
+        { "x": 17, "y":15, "type": "river", "blocking": true },
+        { "x": 16, "y":15, "type": "river", "blocking": true },
+        { "x": 15, "y":15, "type": "river", "blocking": true }
+      ],
+      "items": [
+        { "id": "it1", "name": "Arbousier", "kind": "potion_hp", "effect": { "hp": 5 }, "x": 14, "y": 2, "icon": "/assets/items/arbousier.png", "description": "Un jolie arbousier, avec plein de fruit. Je suis sur que s'en nourrir de faire que le plus grand bien." },
+        { "id": "it2", "name": "Plante d'imortelle", "kind": "potion_hp", "effect": { "hp": 10 }, "x": 13, "y": 15, "icon": "/assets/items/immo.png", "description": "De l'immortel de Corse, sans frotter sur le corps pourrait aider a la guerison." },
+        { "id": "it3", "name": "Amanite tue-mouches", "kind": "potion_hp", "effect": { "hp": -10 }, "x": 1, "y": 13, "icon": "/assets/items/amanite.png", "description": "Un champignon rouge, qui sait quelle effet il peux avoir sur le corps."  }
+      ],
+      "monsters": [
+        { "id": "m1", "name": "U Bufonu", "hp": 8, "atk": 4, "x": 6, "y": 9, "icon": "/assets/monsters/bufonu.png", "description": "Type : insecte monstrueux (bourdon / frelon / coléoptère de mort).Description physique :Insecte énorme (taille variable selon ton jeu, de la main au chien), proche du bourdon ou du frelon. Corps noir ou doré, très brillant, ailes épaisses et rugissantes. Dans les récits, c’est une mouche / “bourdon de mort”.Comportement / pouvoirs :Son vol est associé à la mort ou au malheur ; dans certains récits, il est enfermé dans une courge (zucca) pour neutraliser son pouvoir." },
+        { "id": "m2", "name": "E Calcagnette", "hp": 16, "atk": 3, "x": 16, "y": 11, "icon": "/assets/monsters/calcagnette.png","description": "Type : fourmis géantes à tête humaine, porteuses d’épidémies.Description physique :Grandes fourmis blanches et rouges de la taille d’un cabri, avec une tête humaine miniature, grimaçante. Elles avancent en colonnes compactes.Comportement / pouvoirs :Leur apparition est liée aux épidémies qui déciment villages et troupeaux." },
+        { "id": "m3", "name": "A Dentilonga", "hp": 16, "atk": 3, "x": 16, "y": 11, "icon": "/assets/monsters/loup.png","description": "Type : ogresse / croquemitaine féminine.Description physique :Vieille femme au visage décharné, la bouche garnie de dents très longues (d’où son nom), parfois dépassant des lèvres. Dos voûté, mains griffues.Comportement / pouvoirs :Elle est racontée comme une mangeuse d’enfants, liée aux contes d’avertissement adressés aux plus jeunes." }
+      ],
+      "exits": [{ "x": 19, "y": 11, "to": "map2" }]
+    },
+    {
+      "id": "map2",
+      "name": "L'entrée du maquis",
+      "background": "/assets/level1.png",
+      "requireAllMonstersDead": true,
+      "spawns": [{ "x":1,"y":1 }, { "x":2,"y":1 }, { "x":1,"y":2 }, { "x":2,"y":2 }, { "x":3,"y":1 }, { "x":3,"y":2 }],
+      "decor": [
+        { "x": 5, "y": 8, "type": "wall",  "blocking": true },
+        { "x":10, "y": 4, "type": "tree",  "blocking": true },
+        { "x": 11, "y":0, "type": "river", "blocking": true },
+        { "x": 12, "y":0, "type": "river", "blocking": true },
+        { "x": 13, "y":0, "type": "river", "blocking": true },
+        { "x": 11, "y":1, "type": "river", "blocking": true },
+        { "x": 12, "y":1, "type": "river", "blocking": true },
+        { "x": 13, "y":1, "type": "river", "blocking": true }
+
+      ],
+      "items": [
+        { "id": "it1", "name": "Potion de vie", "kind": "potion_hp", "effect": { "hp": 10 }, "x": 2, "y": 2, "icon": "/assets/potion.png" },
+        { "id": "it2", "name": "Cristal spirituel", "kind": "potion_sp", "effect": { "sp": 10 }, "x": 7, "y": 15, "icon": "/assets/items/cristal.png" },
+        { "id": "it3", "name": "Épée courte", "kind": "weapon", "atk": 2, "x": 10, "y": 4, "icon": "/assets/items/sword.png" }
+      ],
+      "monsters": [
+        { "id": "m1", "name": "U Bufonu", "hp": 8, "atk": 4, "x": 6, "y": 9, "icon": "/assets/monsters/esprit.png", "description": "Type : insecte monstrueux (bourdon / frelon / coléoptère de mort).Description physique :Insecte énorme (taille variable selon ton jeu, de la main au chien), proche du bourdon ou du frelon. Corps noir ou doré, très brillant, ailes épaisses et rugissantes. Dans les récits, c’est une mouche / “bourdon de mort”.Comportement / pouvoirs :Son vol est associé à la mort ou au malheur ; dans certains récits, il est enfermé dans une courge (zucca) pour neutraliser son pouvoir." },
+        { "id": "m2", "name": "E Calcagnette", "hp": 16, "atk": 3, "x": 16, "y": 11, "icon": "/assets/monsters/loup.png","description": "Type : fourmis géantes à tête humaine, porteuses d’épidémies.Description physique :Grandes fourmis blanches et rouges de la taille d’un cabri, avec une tête humaine miniature, grimaçante. Elles avancent en colonnes compactes.Comportement / pouvoirs :Leur apparition est liée aux épidémies qui déciment villages et troupeaux." },
+        { "id": "m3", "name": "A Dentilonga", "hp": 16, "atk": 3, "x": 16, "y": 11, "icon": "/assets/monsters/loup.png","description": "Type : ogresse / croquemitaine féminine.Description physique :Vieille femme au visage décharné, la bouche garnie de dents très longues (d’où son nom), parfois dépassant des lèvres. Dos voûté, mains griffues.Comportement / pouvoirs :Elle est racontée comme une mangeuse d’enfants, liée aux contes d’avertissement adressés aux plus jeunes." }
+      ],
+      "exits": [{ "x": 19, "y": 19, "to": "map3" }]
+    },
+    {
+      "id": "map3",
+      "name": "L'antre du Dragonu",
+      "background": "/assets/level1.png",
+      "requireAllMonstersDead": true,
+      "spawns": [{ "x":1,"y":1 }, { "x":2,"y":1 }, { "x":1,"y":2 }, { "x":2,"y":2 }, { "x":3,"y":1 }, { "x":3,"y":2 }],
+      "decor": [
+        { "x": 5, "y": 8, "type": "wall",  "blocking": true },
+        { "x":10, "y": 4, "type": "tree",  "blocking": true },
+        { "x": 11, "y":0, "type": "river", "blocking": true },
+        { "x": 12, "y":0, "type": "river", "blocking": true },
+        { "x": 13, "y":0, "type": "river", "blocking": true },
+        { "x": 11, "y":1, "type": "river", "blocking": true },
+        { "x": 12, "y":1, "type": "river", "blocking": true },
+        { "x": 13, "y":1, "type": "river", "blocking": true }
+      ],
+      "items": [
+        { "id": "it1", "name": "Potion de vie", "kind": "potion_hp", "effect": { "hp": 10 }, "x": 2, "y": 2, "icon": "/assets/potion.png" },
+        { "id": "it2", "name": "Cristal spirituel", "kind": "potion_sp", "effect": { "sp": 10 }, "x": 7, "y": 15, "icon": "/assets/items/cristal.png" },
+        { "id": "it3", "name": "Épée courte", "kind": "weapon", "atk": 2, "x": 10, "y": 4, "icon": "/assets/items/sword.png" }
+      ],
+      "monsters": [
+        { "id": "m1", "name": "U Bufonu", "hp": 8, "atk": 4, "x": 6, "y": 9, "icon": "/assets/monsters/esprit.png", "description": "Type : insecte monstrueux (bourdon / frelon / coléoptère de mort).Description physique :Insecte énorme (taille variable selon ton jeu, de la main au chien), proche du bourdon ou du frelon. Corps noir ou doré, très brillant, ailes épaisses et rugissantes. Dans les récits, c’est une mouche / “bourdon de mort”.Comportement / pouvoirs :Son vol est associé à la mort ou au malheur ; dans certains récits, il est enfermé dans une courge (zucca) pour neutraliser son pouvoir." },
+        { "id": "m2", "name": "E Calcagnette", "hp": 16, "atk": 3, "x": 16, "y": 11, "icon": "/assets/monsters/loup.png","description": "Type : fourmis géantes à tête humaine, porteuses d’épidémies.Description physique :Grandes fourmis blanches et rouges de la taille d’un cabri, avec une tête humaine miniature, grimaçante. Elles avancent en colonnes compactes.Comportement / pouvoirs :Leur apparition est liée aux épidémies qui déciment villages et troupeaux." },
+        { "id": "m3", "name": "A Dentilonga", "hp": 16, "atk": 3, "x": 16, "y": 11, "icon": "/assets/monsters/loup.png","description": "Type : ogresse / croquemitaine féminine.Description physique :Vieille femme au visage décharné, la bouche garnie de dents très longues (d’où son nom), parfois dépassant des lèvres. Dos voûté, mains griffues.Comportement / pouvoirs :Elle est racontée comme une mangeuse d’enfants, liée aux contes d’avertissement adressés aux plus jeunes." }
+      ],
+      "exits": [{ "x": 19, "y": 19, "to": "map4" }]
+    },
+     {
+      "id": "map3",
+      "name": "Le repère du Basilic",
+      "background": "/assets/level1.png",
+      "requireAllMonstersDead": true,
+      "spawns": [{ "x":1,"y":1 }, { "x":2,"y":1 }, { "x":1,"y":2 }, { "x":2,"y":2 }, { "x":3,"y":1 }, { "x":3,"y":2 }],
+      "decor": [
+        { "x": 5, "y": 8, "type": "wall",  "blocking": true },
+        { "x":10, "y": 4, "type": "tree",  "blocking": true },
+        { "x": 11, "y":0, "type": "river", "blocking": true },
+        { "x": 12, "y":0, "type": "river", "blocking": true },
+        { "x": 13, "y":0, "type": "river", "blocking": true },
+        { "x": 11, "y":1, "type": "river", "blocking": true },
+        { "x": 12, "y":1, "type": "river", "blocking": true },
+        { "x": 13, "y":1, "type": "river", "blocking": true }
+      ],
+      "items": [
+        { "id": "it1", "name": "Potion de vie", "kind": "potion_hp", "effect": { "hp": 10 }, "x": 2, "y": 2, "icon": "/assets/potion.png" },
+        { "id": "it2", "name": "Cristal spirituel", "kind": "potion_sp", "effect": { "sp": 10 }, "x": 7, "y": 15, "icon": "/assets/items/cristal.png" },
+        { "id": "it3", "name": "Épée courte", "kind": "weapon", "atk": 2, "x": 10, "y": 4, "icon": "/assets/items/sword.png" }
+      ],
+      "monsters": [
+        { "id": "m1", "name": "U Bufonu", "hp": 8, "atk": 4, "x": 6, "y": 9, "icon": "/assets/monsters/esprit.png", "description": "Type : insecte monstrueux (bourdon / frelon / coléoptère de mort).Description physique :Insecte énorme (taille variable selon ton jeu, de la main au chien), proche du bourdon ou du frelon. Corps noir ou doré, très brillant, ailes épaisses et rugissantes. Dans les récits, c’est une mouche / “bourdon de mort”.Comportement / pouvoirs :Son vol est associé à la mort ou au malheur ; dans certains récits, il est enfermé dans une courge (zucca) pour neutraliser son pouvoir." },
+        { "id": "m2", "name": "E Calcagnette", "hp": 16, "atk": 3, "x": 16, "y": 11, "icon": "/assets/monsters/loup.png","description": "Type : fourmis géantes à tête humaine, porteuses d’épidémies.Description physique :Grandes fourmis blanches et rouges de la taille d’un cabri, avec une tête humaine miniature, grimaçante. Elles avancent en colonnes compactes.Comportement / pouvoirs :Leur apparition est liée aux épidémies qui déciment villages et troupeaux." },
+        { "id": "m3", "name": "A Dentilonga", "hp": 16, "atk": 3, "x": 16, "y": 11, "icon": "/assets/monsters/loup.png","description": "Type : ogresse / croquemitaine féminine.Description physique :Vieille femme au visage décharné, la bouche garnie de dents très longues (d’où son nom), parfois dépassant des lèvres. Dos voûté, mains griffues.Comportement / pouvoirs :Elle est racontée comme une mangeuse d’enfants, liée aux contes d’avertissement adressés aux plus jeunes." }
+      ],
+      "exits": [{ "x": 19, "y": 19, "to": "map4" }]
+    }
+  ]
+}
